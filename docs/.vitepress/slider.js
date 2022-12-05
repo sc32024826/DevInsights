@@ -5,6 +5,7 @@ const slider = [
             {text: 'uniapp', link: '/uniapp'},
             {text: 'vue', link: '/vue'},
             {text: 'Typescript', link: '/'},
+            {text: 'VitePress', link: '/vitepress'}
         ]
     },
     {
