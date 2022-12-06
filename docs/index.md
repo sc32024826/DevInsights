@@ -2,14 +2,27 @@
 layout: home
 hero:
     name: Vitepress
+features:
+  - icon: ⚡️
+    title: 前端
+    details: Lorem ipsum...
+  - icon: 🖖
+    title: Power of Vue meets Markdown
+    details: Lorem ipsum...
+  - icon: 🛠️
+    title: Simple and minimal, always
+    details: Lorem ipsum...
 ---
 <div id="Vantacontainer" ref="myBackground">
 </div>
 
 <script>
+    import * as THREE from 'three'
+    import RINGS from 'vanta/src/vanta.rings'
+    let vatan = null
     export default{
         mounted(){
-            VANTA.RINGS({
+            vatan = RINGS({
                 el: this.$refs.myBackground,
                 mouseControls: true,
                 touchControls: true,
@@ -17,8 +30,12 @@ hero:
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 1.00,
-                scaleMobile: 1.00
+                scaleMobile: 1.00,
+                THREE
             })
+        },
+        beforeDestroy(){
+            vatan && vatan.destroy()
         }
     }
 </script>

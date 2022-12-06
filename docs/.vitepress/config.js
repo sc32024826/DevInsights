@@ -24,8 +24,6 @@ export default {
             "link",
             { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" },
         ],
-        ["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
-        ["script", { src: "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" }],
-        ["script", { src: "https://cdn.jsdelivr.net/npm/vanta/dist/vanta.rings.min.js" }]
+        ["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }]
     ]
 }

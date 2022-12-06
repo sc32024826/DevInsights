@@ -2,8 +2,8 @@ const slider = [
     {
         text: '前端',
         items: [
-            { text: 'uniapp', link: '/uniapp' },
-            { text: 'vue', link: '/vue' },
+            { text: 'Uniapp', link: '/uniapp' },
+            { text: 'Vue', link: '/vue' },
             { text: 'Typescript', link: '/' },
             { text: 'VitePress', link: '/vitepress' },
             {
@@ -21,7 +21,7 @@ const slider = [
         items: [
             { text: 'Koa2', link: '/' },
             { text: 'Thinkphp', link: '/' },
-            { text: 'Docker', link: '/' },
+            { text: 'Docker', link: '/docker' },
             { text: 'Python', link: '/' },
             { text: 'Nginx', link: '/' },
         ]
