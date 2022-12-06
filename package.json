@@ -14,6 +14,8 @@
     },
     "dependencies": {
         "markdown-it-custom-attrs": "^1.0.2",
+        "sass": "^1.56.1",
+        "sass-loader": "^13.2.0",
         "three": "^0.147.0",
         "vanta": "^0.5.24"
     }

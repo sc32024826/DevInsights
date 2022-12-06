@@ -2,10 +2,39 @@
 
 [官网:`https://www.vantajs.com/?effect=cells`](https://www.vantajs.com/?effect=cells)
 
+## 效果
+
+<div id="demo" ref="demo"></div>
+
+<script>
+    export default{
+        mounted(){
+            VANTA.RINGS({
+                el: this.$refs.demo,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })
+        }
+    }
+</script>
+
+<style>
+    #demo{
+        width:100%;
+        height:400px;
+        background: white;
+    }
+</style>
+
 ## 主要使用方法
 
 ```javascript
-<script src="three.r134.min.js"></script>
+<script src="three.r134.min.js"></>
 <script src="vanta.cells.min.js"></script>
 <script>
 VANTA.CELLS({
@@ -67,5 +96,5 @@ export default {
     right: 0;
     bottom: 0;
 }
-</style>
+</>
 ```
