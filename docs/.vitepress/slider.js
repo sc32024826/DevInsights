@@ -52,9 +52,12 @@ const slider = [
             {text: 'CRMEB 二次开发', link: '/'},
         ]
     },
-    // {
-    //     text: '工作学习经历',
-    //     link: '/studyWork'
-    // },
+    {
+        text: '待分类页面',
+        collapsible: true,
+        items: [
+            // {text: '超凡云仓APP', link: '/'},
+        ]
+    },
 ]
 export default slider
