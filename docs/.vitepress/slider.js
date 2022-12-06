@@ -12,7 +12,8 @@ const slider = [
                     { text: 'Vanta', link: '/css/vanta' },
                     { text: 'Loading', link: '/css/loading' }
                 ]
-            }
+            },
+            { text: 'Bash & Shell', link: 'bash&shell'}
         ]
     },
     {

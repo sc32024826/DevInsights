@@ -1,5 +1,5 @@
 const router = [
-    { text: 'uniapp', link: '/uniapp' },
+    // { text: 'uniapp', link: '/uniapp' },
     // { text: 'pinia', link: '/pinia' },
     // { text: 'unicloud', link: '/unicloud' },
     // { text: 'vuex', link: '/vuex' },

@@ -2,16 +2,12 @@
 layout: home
 hero:
     name: Vitepress
-features:
-  - icon: ⚡️
-    title: 前端
-    details: Lorem ipsum...
-  - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    actions:
+    - theme: brand
+      text: 浏览
+      link: 'uniapp'
+    # - theme: alt
+    #   text: View on GitHub
 ---
 <div id="Vantacontainer" ref="myBackground">
 </div>
