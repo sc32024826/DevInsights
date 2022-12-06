@@ -13,6 +13,8 @@
         "vitepress": "^1.0.0-alpha.29"
     },
     "dependencies": {
-        "markdown-it-custom-attrs": "^1.0.2"
+        "markdown-it-custom-attrs": "^1.0.2",
+        "three": "^0.147.0",
+        "vanta": "^0.5.24"
     }
 }
