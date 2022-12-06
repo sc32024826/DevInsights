@@ -1,7 +1,7 @@
 import mdItCustomAttrs from 'markdown-it-custom-attrs'
 import useNav from './nav'
 import useSilder from './slider'
-module.exports = {
+export default {
     markdown: {},
     title: 'Hello VitePress',
     description: 'Just playing around.',
