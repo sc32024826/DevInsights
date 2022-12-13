@@ -2,6 +2,8 @@ const slider = [
     {
         text: '前端',
         items: [
+            { text: 'Javascript', link: '/javascript' },
+            { text: 'Regex', link: '/regex'},
             { text: 'Uniapp', link: '/uniapp' },
             { text: 'Vue', link: '/vue' },
             { text: 'Typescript', link: '/' },
