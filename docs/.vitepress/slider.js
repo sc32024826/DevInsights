@@ -6,7 +6,7 @@ const slider = [
             { text: 'Regex', link: '/regex'},
             { text: 'Uniapp', link: '/uniapp' },
             { text: 'Vue', link: '/vue' },
-            { text: 'Typescript', link: '/' },
+            // { text: 'Typescript', link: '/' },
             { text: 'VitePress', link: '/vitepress' },
             {
                 text: 'CSS特效及动画',
@@ -22,11 +22,11 @@ const slider = [
         text: '后端',
         collapsible: true,
         items: [
-            { text: 'Koa2', link: '/' },
+            { text: 'Koa2', link: '/server/Koa2' },
             { text: 'Thinkphp', link: '/' },
-            { text: 'Docker', link: '/docker' },
-            { text: 'Python', link: '/' },
-            { text: 'Nginx', link: '/' },
+            { text: 'Docker', link: '/server/Docker' },
+            { text: 'Python', link: '/server/Python' },
+            { text: 'Nginx', link: '/server/Nginx' },
         ]
     },
     {
