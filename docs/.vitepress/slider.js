@@ -15,7 +15,7 @@ const slider = [
                     { text: 'Loading', link: '/css/loading' }
                 ]
             },
-            { text: 'Bash & Shell', link: 'bash&shell'}
+            { text: 'Bash Shell', link: 'bash'}
         ]
     },
     {

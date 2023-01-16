@@ -30,3 +30,7 @@ npm WARN config global `--global`, `--local` are deprecated. Use `--location=glo
 ````
 
 找到`nodejs`的安装目录 修改`npm.cmd`和`npx.cmd`中`prefix-g` 改为 `prefix --location=global`
+
+| npm | yarn | 说明 |
+| ---- | ---- | ---- |
+|`npm ls -g`| `yarn global list`| 查看全局安装的包 |
