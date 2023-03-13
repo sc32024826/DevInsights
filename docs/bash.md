@@ -4,12 +4,36 @@
 
 <img src="./public/yarn_npm.png" data-fancybox="gallery"/>
 
-## yarn源配置
+## 源配置
+
 
 ```bash
+# yarn
 yarn config get registry #查看当前源
 
 yarn config set registry https://registry.npm.taobao.org #更换源
+
+# npm
+npm get reistry
+npm config set registry https://registry.npm.taobao.org
+```
+
+## 使用 `nrm` 管理源
+
+``` bash
+npm install -g nrm  # node 某版本之后 内置
+
+nrm current  # 查看当前使用的源
+
+nrm ls  # 查看可用源
+
+nrm use taobao # 切换源
+
+nrm test  测速
+
+nrm add <registry> <url>  #添加一个源   registry为源名，url为源地址
+
+nrm del  <registry>  #删除源
 ```
 
 ## 常用命令
