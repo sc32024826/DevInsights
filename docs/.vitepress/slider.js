@@ -12,7 +12,8 @@ const slider = [
                 text: 'CSS特效及动画',
                 items: [
                     { text: 'Vanta', link: '/css/vanta' },
-                    { text: 'Loading', link: '/css/loading' }
+                    { text: 'Loading', link: '/css/loading' },
+                    { text: 'Matrix', link: '/css/Matrix' }
                 ]
             },
             { text: 'Bash Shell', link: 'bash'}
