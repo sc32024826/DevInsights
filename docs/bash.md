@@ -58,3 +58,12 @@ npm WARN config global `--global`, `--local` are deprecated. Use `--location=glo
 | npm | yarn | 说明 |
 | ---- | ---- | ---- |
 |`npm ls -g`| `yarn global list`| 查看全局安装的包 |
+
+## 新安装的bash 无法使用方向键控制
+
+``` bash
+# ~/.bashrc
+
+alias taro='winpty taro.cmd' # 需要注意 = 附近不能有空格
+alias vue='winpty vue.cmd' # 已经不常使用
+```
