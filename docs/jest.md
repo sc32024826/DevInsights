@@ -5,6 +5,11 @@
 ```bash
 yarn add -D jest
 ```
++ 生成配置
+
+```bash
+jest --init
+```
 
 + 添加脚本
 
@@ -79,6 +84,26 @@ describe('一年级考试',()=>{
 
 ```bash
 npm install @babel/core @babel/preset-env -D
+
+yarn add --dev babel-jest @babel/core @babel/preset-env babel-plugin-transform-es2015-modules-commonjs
+```
+
+```js
+// babel.config.js
+module.exports = {
+    presets: [
+        [
+            "@babel/preset-env",
+            {
+                targets: {
+                    node: "current"
+                }
+            }
+        ]
+    ],
+    plugins: ["transform-es2015-modules-commonjs"]
+};
+
 ```
 
 ## 异步代码测试方法

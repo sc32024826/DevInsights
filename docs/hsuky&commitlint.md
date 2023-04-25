@@ -58,7 +58,7 @@ npx husky install
 ```
 
 ```bash
-# 手动添加钩子
+# 手动添加钩子 如果没有添加这条 会导致 提交时没有验证
 npx husky add .husky/commit-msg 'npx commitlint --edit $1
 
 #Yarn 1 自动添加钩子
