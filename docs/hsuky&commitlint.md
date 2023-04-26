@@ -29,28 +29,6 @@ npm install -g commitizen cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 ```
 
-+  [standard-version](https://link.zhihu.com/?target=https%3A//github.com/conventional-changelog/standard-version)
-
-```bash
-#npm
-npm install --save-dev standard-version
-#yarn
-yarn add -D standard-version
-```
-
-```json
-//package.json
-"script":{
-    ...
-    "release": "standard-version"
-}
-```
-使用时
-```bash
-npm run release
-
-yarn release
- ```
 ## 安装 git 钩子
 
 ```bash
