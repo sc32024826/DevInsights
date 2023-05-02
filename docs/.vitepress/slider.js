@@ -3,7 +3,7 @@ const slider = [
         text: '前端',
         items: [
             { text: 'Javascript', link: '/javascript' },
-            { text: 'Regex', link: '/regex'},
+            { text: 'Regex', link: '/regex' },
             { text: 'Uniapp', link: '/uniapp' },
             { text: 'Vue', link: '/vue' },
             // { text: 'Typescript', link: '/' },
@@ -16,7 +16,13 @@ const slider = [
                     { text: 'Matrix', link: '/css/Matrix' }
                 ]
             },
-            { text: 'Bash Shell', link: 'bash'}
+            { text: 'Bash Shell', link: '/bash' },
+            { text: 'husky', link: '/husky' },
+            { text: 'Nuxt3', link: '/Nuxt3' },
+            { text: '单元测试', link: '/jest' },
+            { text: 'webGL', link: '/webGL' },
+            { text: 'Electron', link: '/Electron' },
+
         ]
     },
     {
@@ -44,6 +50,8 @@ const slider = [
         items: [
             { text: '建模', link: '/' },
             { text: '蓝图', link: '/' },
+            { text: '灯光渲染', link: '/' },
+            { text: '粒子特效', link: '/' },
         ]
     },
     {
@@ -65,10 +73,20 @@ const slider = [
         ]
     },
     {
+        text: 'AI',
+        collapsible: true,
+        items: [
+            { text: 'stable diffuion', link: '/ai/stable-diffuion' },
+            { text: 'ChatGPT', link: '/ai/chatGPT' }
+
+        ]
+    },
+    {
         text: '待分类页面',
         collapsible: true,
         items: [
-            // {text: '超凡云仓APP', link: '/'},
+            {text: 'PowerShell配置', link: '/Windows/Powershell'},
+            {text: 'Scoop', link: '/Windows/Scoop'},
         ]
     },
 ]
