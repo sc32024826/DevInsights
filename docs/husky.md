@@ -23,10 +23,14 @@ yarn add -D @commitlint/config-conventional @commitlint/cli
 + Commitizen: 替代 git commit
 
 ```bash
-npm install -g commitizen cz-conventional-changelog
+npm install -g commitizen cz-conventional-changelog # 这个配置没有 emoji
+
+npm install --global emoji-cz # 需要emoji 可以用这个
 
 #写入 配置文件
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+
+echo '{ "path": "emoji-cz" }' > ~/.czrc # 有emoji
 ```
 
 ## 安装 git 钩子
