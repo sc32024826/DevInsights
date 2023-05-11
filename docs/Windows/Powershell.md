@@ -19,3 +19,14 @@ Invoke-Expression (&starship init powershell)
 `vscode` 同理 需要在配置中设置相应的字体
 
 ![图2](../public/vscode-terminal-font.png)
+
+
+## 简化`pnpm `输入 
+
+```shell
+# 用记事本打开配置文件
+notepad $profile.AllUsersAllHosts
+
+# 设置alias
+set-alias -name pn -value pnpm
+```

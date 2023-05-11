@@ -19,3 +19,6 @@ npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
 |---|---|---|
 |事件|`preventDefault` 和 `stopPropagation`|只有 `stopPropagation`|
 |`renderjs`|支持|不支持|
+
+
+## 透明页面

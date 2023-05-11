@@ -7,6 +7,7 @@
 ```bash
 #npm
 npm install husky --save-dev
+
 #yarn
 yarn add -D husky
 ```
@@ -16,6 +17,7 @@ yarn add -D husky
 ```bash
 #npm
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
+
 #yarn
 yarn add -D @commitlint/config-conventional @commitlint/cli
 ```
@@ -25,12 +27,12 @@ yarn add -D @commitlint/config-conventional @commitlint/cli
 ```bash
 npm install -g commitizen cz-conventional-changelog # 这个配置没有 emoji
 
-npm install --global emoji-cz # 需要emoji 可以用这个
+npm install --g git-cz # 需要emoji 可以用这个
 
 #写入 配置文件
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
-echo '{ "path": "emoji-cz" }' > ~/.czrc # 有emoji
+echo '{ "path": "git-cz" }' > ~/.czrc # 有emoji
 ```
 
 ## 安装 git 钩子
@@ -41,12 +43,14 @@ npx husky install
 
 ```bash
 # 手动添加钩子 如果没有添加这条 会导致 提交时没有验证
-npx husky add .husky/commit-msg 'npx commitlint --edit $1
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+
+npm pkg set scripts.prepare="husky install"
 
 #Yarn 1 自动添加钩子
 npx husky-init && yarn
 ```
-使用第二条命令会在`package.json` 中创建脚本
+使用第二种方式会自动在`package.json` 中创建脚本
 
 ```json
 // package.json
