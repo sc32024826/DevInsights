@@ -22,3 +22,7 @@ npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
 
 
 ## 透明页面
+
+## 动态组件`component`
+
+在`uniapp`中 `vue2`版本 `is`必须传递`string`类型, 否则云打包无法正常渲染
