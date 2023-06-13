@@ -3,3 +3,6 @@
 ## this.$patch()
 
 修改state对象, 覆盖
+
+
+## this.$reset()

@@ -61,3 +61,9 @@ npx husky-init && yarn
   }
 }
 ```
+
+创建 `commitlint.config.js` 文件
+
+```
+module.exports = { extends: ['@commitlint/config-conventional'] };
+```

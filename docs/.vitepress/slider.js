@@ -3,10 +3,10 @@ const slider = [
         text: '前端',
         items: [
             { text: 'Javascript', link: '/javascript' },
-            { text: 'Regex', link: '/regex' },
+            { text: 'Regex', link: '/regexDemo' },
             { text: 'Uniapp', link: '/uniapp' },
             { text: 'Vue', link: '/vue' },
-            // { text: 'Typescript', link: '/' },
+            { text: 'Typescript', link: '/Typescript' },
             { text: 'VitePress', link: '/vitepress' },
             {
                 text: 'CSS特效及动画',

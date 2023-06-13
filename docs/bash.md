@@ -48,6 +48,7 @@ code .
 ## npm yarn 遇到的问题
 
 ### 使用`npx @dcloudio/uvm alpha`命令升级时 遇到的报错
+ -
 
 ```bash
 npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
@@ -59,7 +60,7 @@ npm WARN config global `--global`, `--local` are deprecated. Use `--location=glo
 | ---- | ---- | ---- |
 |`npm ls -g`| `yarn global list`| 查看全局安装的包 |
 
-## 新安装的bash 无法使用方向键控制
+- 新安装的bash 无法使用方向键控制
 
 ``` bash
 # ~/.bashrc
@@ -67,3 +68,9 @@ npm WARN config global `--global`, `--local` are deprecated. Use `--location=glo
 alias taro='winpty taro.cmd' # 需要注意 = 附近不能有空格
 alias vue='winpty vue.cmd' # 已经不常使用
 ```
+- yarn : 无法加载文件 C:\Program Files\nodejs\yarn.ps1，因为在此系统上禁止运行脚本。
+
+  需要修改执行策略, 管理员模式启动`powershell`, 执行命令:
+  ```
+   set-executionpolicy remotesigned
+  ```
