@@ -102,3 +102,5 @@ Partial<obj> = {
     c?: string
 }
 ```
+
+## `infer` ts 中的类型推断

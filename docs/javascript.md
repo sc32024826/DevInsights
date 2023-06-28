@@ -99,3 +99,68 @@ c ??= d  // c = '123'
 | const a = function(){}| 'function'| a instanceof Function -> true|
 | const b = {a:1}|'object'|b instanceof Object -> true|
 | const c = Symbol()| 'symbol'| 不能判断基本类型数据|
+
+
+## 深拷贝
+
+- ...展开运算符
+
+```javascript
+let a = {
+    name: 'sdfsd',
+    age: 4
+}
+
+const b = {...a}
+
+b.age = 5
+
+console.log(a) // {name: 'sdfsd',age: 4}
+console.log(b) // {name: 'sdfsd',age: 5}
+
+const c = {a, b:'asda'}
+const d = {...c}
+d.a.age = 6
+
+console.log(c) // {a:{name: 'sdfsd',age: 6}, b: 'asda'}
+console.log(d) // {a:{name: 'sdfsd',age: 6}, b: 'asda'}
+
+```
+
+缺点: 只能展开第一层 多层时 仍为浅拷贝
+
+- JSON.parse() & JSON.stringify()
+
+```javascript
+let a = {name:'张三', age: 1}
+const b = JSON.parse(JSON.stringify(a))
+
+b.age = 2
+
+console.log(a) // {name: '张三',age: 1}
+console.log(b) // {name: '张三',age: 2}
+```
+
+缺点: 当对象中包含Function时 会被忽略
+
+- 递归函数
+```javascript
+let a = {
+    name:'张三',
+    age: 1,
+    action(){
+        console.log('555')
+    }
+}
+// 通用做法
+function deepClone(value){
+    if (typeof value !== 'object' || value === null) return value
+    const result = Array.isArray(value) ? [] : {}
+    for(let key in value){
+        if(value.hasOwnProperty(key)){
+            result[key] = deepClone(value[key])
+        }
+    }
+    return result
+}
+```
