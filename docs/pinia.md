@@ -8,5 +8,7 @@
 ## 持久化插件
 
 ```
-pnpm add 
+pnpm add
 ```
+
+## this.$reset()
