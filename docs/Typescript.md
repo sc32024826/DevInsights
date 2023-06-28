@@ -48,7 +48,7 @@ interface Ifunctiondemo<T> {
   (a: T, b: T): number;
 }
 const fn: Ifunctiondemo<number> = (a, b) => a + b;
-
+```
 
 ## TypeScript的语法，叫非空断言操作符: `!.`
 
@@ -57,6 +57,7 @@ const fn: Ifunctiondemo<number> = (a, b) => a + b;
 ## Omit<T,K>
 
 将类型/接口T中的 k删除 并返回新的类型
+
 
 ```typescript
 type obj {
