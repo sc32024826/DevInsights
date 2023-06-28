@@ -85,3 +85,17 @@ c ??= d  // c = '123'
   "listFiles": true// 打印编译的文件(包括引用的声明文件)
 }
 ```
+
+
+## `typeof` 和 `instanceof`的区别
+||typeof|instanceof|
+|---|---|---|
+|1|'number'| 不能判断基本类型数据|
+|'1'| 'string'|不能判断基本类型数据|
+|true|'boolean'|不能判断基本类型数据|
+|undefined| 'undefined'|不能判断基本类型数据|
+|null|'object'|不能判断基本类型数据|
+|[1,2,3]|'object'|[1,2,3] instanceof Array -> true|
+| const a = function(){}| 'function'| a instanceof Function -> true|
+| const b = {a:1}|'object'|b instanceof Object -> true|
+| const c = Symbol()| 'symbol'| 不能判断基本类型数据|
