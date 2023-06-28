@@ -3,3 +3,10 @@
 ## this.$patch()
 
 修改state对象, 覆盖
+
+
+## 持久化插件
+
+```
+pnpm add 
+```

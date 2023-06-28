@@ -36,6 +36,12 @@ nrm add <registry> <url>  #添加一个源   registry为源名，url为源地址
 nrm del  <registry>  #删除源
 ```
 
+## 使用`nvm` 管理`nodejs` 版本
+
+```shell
+
+```
+
 ## 常用命令
 
 ```bash
