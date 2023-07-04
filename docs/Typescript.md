@@ -1,16 +1,16 @@
 # Typescript
 
-## 找不到名称“\_\_dirname”
+## 1. 找不到名称“\_\_dirname”
 
 ```bash
 yarn add -D @types/node
 ```
 
-## 找不到指定的模块 XXX, 有时候`import XXX from '@/XXX/index'` 省略`index` 或者 `.ts` 后缀名时会报错
+## 2. 找不到指定的模块 XXX, 有时候`import XXX from '@/XXX/index'` 省略`index` 或者 `.ts` 后缀名时会报错
 
 需要在`tsconfig.json` 中 配置`compilerOptions.paths` 例如 `"@/*": ["src/*"]`
 
-## 泛型约束 extend
+## 3. 泛型约束 extend
 
 ```typescript
 interface Idemo {
@@ -27,7 +27,7 @@ demo<string>("121"); // ✓
 demo<number>(123); // ×
 ```
 
-## 函数 输入输出类型的复用
+## 4. 函数 输入输出类型的复用
 
 ```typescript
 interface Ifunctiondemo {
@@ -50,11 +50,11 @@ interface Ifunctiondemo<T> {
 const fn: Ifunctiondemo<number> = (a, b) => a + b;
 ```
 
-## TypeScript的语法，叫非空断言操作符: `!.`
+## 5. TypeScript的语法，叫非空断言操作符: `!.`
 
 和`?.`相反，这个符号表示对象后面的属性一定不是null或undefined
 
-## Omit<T,K>
+<!-- ## 6. Omit<T,K>
 
 将类型/接口T中的 k删除 并返回新的类型
 
@@ -66,12 +66,14 @@ type obj {
     c: string
 }
 
-Omit<obj, 'a'|'b'> = {
+Omit<obj, 'a'|'b'>
+
+{
     c: string
 }
 ```
 
-## Pick<T,K>
+## 7. Pick<T,K>
 
 从T中挑选K 返回
 ```typescript
@@ -81,12 +83,13 @@ type obj {
     c: string
 }
 
-Pick<obj,'a'> = {
-    a: string
-}
+// Pick<obj,'a'>
+// {
+//     a: string
+// }
 ```
 
-## Partial<T>
+## 8. Partial<T>
 
 将类型全部转为可选
 
@@ -97,11 +100,12 @@ type obj {
     c: string
 }
 
-Partial<obj> = {
-    a?: string,
-    b?: string,
-    c?: string
-}
-```
+// Partial<obj>
+// {
+//     a?: string,
+//     b?: string,
+//     c?: string
+// }
+``` -->
 
-## `infer` ts 中的类型推断
+## 9. `infer` ts 中的类型推断

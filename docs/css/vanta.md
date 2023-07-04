@@ -4,7 +4,7 @@
 
 ## 效果
 
-<div id="demo" ref="demo"></div>
+<!-- <div id="demo" ref="demo"></div>
 
 <script>
     import * as THREE from 'three'
@@ -36,7 +36,7 @@
         height:400px;
         background: white;
     }
-</style>
+</style> -->
 
 ## 主要使用方法
 

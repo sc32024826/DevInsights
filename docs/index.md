@@ -9,7 +9,7 @@ hero:
     # - theme: alt
     #   text: View on GitHub
 ---
-<div id="Vantacontainer" ref="myBackground">
+<!-- <div id="Vantacontainer" ref="myBackground">
 </div>
 
 <script>
@@ -47,4 +47,4 @@ hero:
     right: 0;
     bottom: 0;
 }
-</style>
+</style> -->
