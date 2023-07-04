@@ -80,3 +80,13 @@ alias vue='winpty vue.cmd' # 已经不常使用
   ```
    set-executionpolicy remotesigned
   ```
+
+### pnpm 全局安装依赖报错 
+`Unable to find the global bin directory`
+
+根据提示 操作就行
+```bash
+pnpm setup
+
+
+```
