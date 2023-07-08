@@ -16,13 +16,21 @@ const slider = [
                     { text: 'Matrix', link: '/css/Matrix' }
                 ]
             },
-            { text: 'Bash Shell', link: '/bash' },
             { text: 'husky', link: '/husky' },
             { text: 'Nuxt3', link: '/Nuxt3' },
             { text: '单元测试', link: '/jest' },
             { text: 'webGL', link: '/webGL' },
             { text: 'Electron', link: '/Electron' },
 
+        ]
+    },
+    {
+        text: 'Shell',
+        items: [
+            { text: 'Bash Shell', link: '/shell/bash' },
+            { text: 'Npm', link: '/shell/npm' },
+            {text: 'PowerShell配置', link: '/Windows/Powershell'},
+            {text: 'Scoop', link: '/Windows/Scoop'},
         ]
     },
     {
@@ -67,6 +75,7 @@ const slider = [
             { text: '超凡云仓APP', link: '/' },
             { text: '超凡云仓WMS for PDA', link: '/' },
             { text: '超凡智云', link: '/' },
+            { text: '超凡记菲', link: '/' },
             { text: '安睡号码-音波助眠 小程序', link: '/' },
             { text: '超凡云仓供应链后台管理B端', link: '/' },
             { text: 'CRMEB 二次开发', link: '/' },
@@ -85,8 +94,7 @@ const slider = [
         text: '待分类页面',
         collapsible: true,
         items: [
-            {text: 'PowerShell配置', link: '/Windows/Powershell'},
-            {text: 'Scoop', link: '/Windows/Scoop'},
+
         ]
     },
 ]
