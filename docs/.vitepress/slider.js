@@ -28,9 +28,11 @@ const slider = [
         text: 'Shell',
         items: [
             { text: 'Bash Shell', link: '/shell/bash' },
+            { text: 'zsh', link: '/shell/MacOS/zsh' },
+            { text: 'PowerShell', link: '/shell/Windows/Powershell' },
             { text: 'Npm', link: '/shell/npm' },
-            {text: 'PowerShell配置', link: '/Windows/Powershell'},
-            {text: 'Scoop', link: '/Windows/Scoop'},
+            { text: 'Scoop', link: '/shell/Windows/Scoop' },
+            { text: 'HomeBrew', link: '/shell/MacOS/HomeBrew' },
         ]
     },
     {

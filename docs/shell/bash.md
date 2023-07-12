@@ -2,7 +2,7 @@
 
 ## npm 及 yarn 命令 对比
 
-<img src="./public/yarn_npm.png" data-fancybox="gallery"/>
+<img src="/yarn_npm.png" data-fancybox="gallery"/>
 
 ## 源配置
 
