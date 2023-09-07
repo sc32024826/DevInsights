@@ -32,7 +32,7 @@ const slider = [
             { text: 'PowerShell', link: '/shell/Windows/Powershell' },
             { text: 'Npm', link: '/shell/npm' },
             { text: 'Scoop', link: '/shell/Windows/Scoop' },
-            { text: 'HomeBrew', link: '/shell/MacOS/HomeBrew' },
+            { text: 'HomeBrew', link: '/shell/MacOS/Homebrew' },
         ]
     },
     {
