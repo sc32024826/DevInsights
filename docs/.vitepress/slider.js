@@ -33,7 +33,7 @@ const slider = [
             { text: 'Npm', link: '/shell/npm' },
             { text: 'Scoop', link: '/shell/Windows/Scoop' },
             { text: 'HomeBrew', link: '/shell/MacOS/Homebrew' },
-            { text: '服务器相关', link: '/shell/server/server' },
+            { text: '服务器相关', link: '/server/server' },
         ]
     },
     {
