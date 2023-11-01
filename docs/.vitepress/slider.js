@@ -44,6 +44,7 @@ const slider = [
             { text: 'Docker', link: '/server/Docker' },
             { text: 'Python', link: '/server/Python' },
             { text: 'Nginx', link: '/server/Nginx' },
+            { text: '宝塔面板', link: '/server/Baota' },
         ]
     },
     {
@@ -81,6 +82,8 @@ const slider = [
             { text: '安睡号码-音波助眠 小程序', link: '/' },
             { text: '超凡云仓供应链后台管理B端', link: '/' },
             { text: 'CRMEB 二次开发', link: '/' },
+            { text: '金不换橙单二次开发', link: '/' },
+            { text: '金不换橙单移动端二次开发', link: '/' },
         ]
     },
     {

@@ -1,5 +1,10 @@
 # Nginx
 
+## 安装
+
+```shell
+yum install nginx
+```
 
 ## 指令
 
@@ -41,7 +46,7 @@ http://192.168.137.181:8080/proxy/test/test.txt， 此时nginx会把匹配的“
 
   nginx -t
 
-### 重启服务 
+### 重启服务
 
   nginx -s reload
 
