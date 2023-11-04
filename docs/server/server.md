@@ -25,3 +25,13 @@ IdentityFile ~/.ssh/id_ed25519
 ```shell
 ssh ali
 ```
+
+
+## 阿里服务器 80端口被阿里云盾 占用 解决办法
+
+```shell
+# 查看80端口的占用情况
+netstat   -nultp | grep :80
+# 结束进程
+fuser -k 80/tcp
+```
