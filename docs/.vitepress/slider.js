@@ -16,7 +16,7 @@ const slider = [
                     { text: 'Matrix', link: '/css/Matrix' }
                 ]
             },
-            { text: 'husky', link: '/husky' },
+            { text: '规范化提交', link: '/husky' },
             { text: 'Nuxt3', link: '/Nuxt3' },
             { text: '单元测试', link: '/jest' },
             { text: 'webGL', link: '/webGL' },
