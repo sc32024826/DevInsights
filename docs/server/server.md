@@ -35,3 +35,23 @@ netstat   -nultp | grep :80
 # 结束进程
 fuser -k 80/tcp
 ```
+
+## 部署pdfjs 遇到的问题
+
+服务器报
+
+```
+Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "application/octet-stream". Strict MIME type checking is enforced for module scripts per HTML spec.
+```
+原因是 服务器期望的是`JavaScript` 但是 收到的是 `application/octet-stream`,
+考虑 是否使用了`mjs` 等 类型
+
+在 `/etc/nginx/mime.types` 中 增加该类型即可
+
+```shell
+#由
+application/javascript  js;
+#改为
+application/javascript  js mjs;
+
+```
