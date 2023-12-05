@@ -14,3 +14,18 @@
     font-size: 24px;
 }
 ```
+
+新建环境配置文件
+`.env.development`
+`.env.test`
+`.env.production`
+
+```shell
+script:{
+    "test": "vue-cli-service serve --mode test",
+    "build:pro": "vue-cli-service build --mode production",
+    "build:test": "vue-cli-service build --mode test"
+}
+
+```
+
