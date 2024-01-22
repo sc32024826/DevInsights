@@ -13,8 +13,11 @@
     "devDependencies": {
         "@commitlint/cli": "^17.6.5",
         "@commitlint/config-conventional": "^17.6.5",
+        "flexsearch": "^0.7.43",
         "husky": "^8.0.3",
-        "vitepress": "^1.0.0-alpha.29"
+        "markdown-it": "^14.0.0",
+        "vitepress": "^1.0.0-alpha.29",
+        "vitepress-plugin-search": "1.0.4-alpha.22"
     },
     "dependencies": {
         "markdown-it-custom-attrs": "^1.0.2",
