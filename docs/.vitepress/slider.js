@@ -16,11 +16,18 @@ const slider = [
                     { text: 'Matrix', link: '/css/Matrix' }
                 ]
             },
-            { text: '规范化提交', link: '/husky' },
             { text: 'Nuxt3', link: '/Nuxt3' },
             { text: '单元测试', link: '/jest' },
             { text: 'webGL', link: '/webGL' },
             { text: 'Electron', link: '/Electron' },
+            {
+                text: 'npm 依赖',
+                items: [
+                    { text: 'husky', link: '/npm-packages/husky' },
+                    { text: 'commitlint', link: '/npm-packages/commitlint'},
+                    { text: 'standard-version', link: '/npm-packages/standard-version'},
+                ]
+            }
 
         ]
     },

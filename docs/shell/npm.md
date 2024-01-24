@@ -29,3 +29,12 @@ script:{
 
 ```
 
+## 统计 提交数量
+
+```shell
+# 通过命令 统计 某种类型的 提交数量 ^(feat)  或者 ^(feat|fix)
+git log --pretty=format:'%s' | grep -E '^(feat)' | wc -l
+
+# 统计总的提交数量
+git rev-list --count HEAD
+```
