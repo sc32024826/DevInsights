@@ -40,5 +40,16 @@ docker kill 容器id
 
 # 进入到指定容器内部进行修改  开启一个新的终端
 docker exec -it 0cd4d9d94de2 bash
+# 添加gitlab的yum源仓库
+curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+
+# 安装
+yum  -y  install  gitlab-ce
+
+```
+
+```bash
+# 拉取镜像
+docker pull gitlab/gitlab-ce
 
 ```
