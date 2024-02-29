@@ -54,7 +54,7 @@ const fn: Ifunctiondemo<number> = (a, b) => a + b;
 
 和`?.`相反，这个符号表示对象后面的属性一定不是null或undefined
 
-<!-- ## 6. Omit<T,K>
+## 6. Omit<T,K>
 
 将类型/接口T中的 k删除 并返回新的类型
 
@@ -83,10 +83,11 @@ type obj {
     c: string
 }
 
-// Pick<obj,'a'>
-// {
-//     a: string
-// }
+Pick<obj,'a'>
+
+{
+  a: string
+}
 ```
 
 ## 8. Partial<T>
@@ -100,12 +101,12 @@ type obj {
     c: string
 }
 
-// Partial<obj>
-// {
-//     a?: string,
-//     b?: string,
-//     c?: string
-// }
-``` -->
+Partial<obj>
+{
+  a?: string,
+  b?: string,
+  c?: string
+}
+```
 
 ## 9. `infer` ts 中的类型推断
