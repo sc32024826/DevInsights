@@ -39,6 +39,9 @@ nrm del  <registry>  #删除源
 ## 使用`nvm` 管理`nodejs` 版本
 
 ```shell
+# macos 查询可以下载的列表
+nvm ls-remote
+# 如果只有 iojs 说明镜像源有问题  2024年03月12日  原因是不支持https 改为http 即可
 
 ```
 
