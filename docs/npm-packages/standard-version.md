@@ -15,3 +15,8 @@ pnpm add -D standard-version
 ```
 
 3. 在部署脚本中 添加 执行命令
+```shell
+pnpm release
+
+```
+
