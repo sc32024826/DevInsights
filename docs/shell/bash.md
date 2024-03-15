@@ -39,6 +39,14 @@ nrm del  <registry>  #删除源
 ## 使用`nvm` 管理`nodejs` 版本
 
 ```shell
+
+# windows 下 安装 nvm
+# 1. 下载 并执行安装
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 2. 配置环境变量
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # macos 查询可以下载的列表
 nvm ls-remote
 # 如果只有 iojs 说明镜像源有问题  2024年03月12日  原因是不支持https 改为http 即可
