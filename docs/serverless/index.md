@@ -43,3 +43,7 @@ fun invoke local  hello
 # 部署
 fun deploy
 ```
+
+###  安装依赖
+
+
