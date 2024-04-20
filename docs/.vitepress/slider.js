@@ -27,12 +27,14 @@ const slider = [
           { text: 'commitlint', link: '/npm-packages/commitlint' },
           { text: 'standard-version', link: '/npm-packages/standard-version' }
         ]
-      }
+      },
+      { text: 'Tailwindcss', link: '/Tailwindcss' },
     ]
   },
   {
     text: 'Shell',
     items: [
+      { text: 'Bun', link: '/shell/Bun'},
       { text: 'Bash Shell', link: '/shell/bash' },
       { text: 'zsh', link: '/shell/MacOS/zsh' },
       { text: 'PowerShell', link: '/shell/Windows/Powershell' },

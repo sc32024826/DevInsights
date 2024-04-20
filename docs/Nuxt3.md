@@ -23,7 +23,7 @@ defineStore('id',{
 ```
 
 ## `try_files`配置说明
-```bash
+```text
 server {
     listen 9001;
     server_name _;
@@ -43,4 +43,12 @@ server {
     # }
 
 }
+```
+
+## 环境变量配置
+
+```json
+"scripts": {
+    dev: 'nuxt dev --dotenv .env.development'
+  },
 ```
