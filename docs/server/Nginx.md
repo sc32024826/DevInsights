@@ -82,3 +82,51 @@ http://192.168.137.181:8080/proxy/test/test.txt， 此时nginx会把匹配的“
       }
    }
 ```
+
+## 负载均衡
+
+```nginx
+http {
+  upstream servers {
+    # 权重越高 分配访问的次数越多
+    server localhost:3000 weight=2;
+    server localhost:3001 weight=1;
+
+  }
+
+  server{
+    listen 80;
+    server_name localhost;
+
+    root /usr/share/nginx;
+
+    # 默认入口
+    index index.html;
+
+    # 错误页面  当404时 会显示根目录 下的 404.html
+    error_page 404 /404.html;
+
+    location / {
+      # 负载均衡 分流
+      proxy_pass http://servers;
+    }
+  }
+}
+
+
+## location
+
+```nginx
+server {
+  ...
+  # 当有等号时 必须是路径跟url 都一致 才能访问
+  location = /app.html {
+    ...
+  }
+
+  # nginx 会匹配 根目录下有没有app文件， 而不是app下的index.html
+  location /app {
+    ...
+  }
+}
+```
