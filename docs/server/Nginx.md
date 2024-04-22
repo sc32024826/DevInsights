@@ -25,7 +25,7 @@ yum install nginx
 ### proxy_pass
 
  - 绝对路径
-  ```
+  ```nginx
   location /proxy {
     proxy_pass http://192.168.137.181:8080/;
   }
@@ -34,7 +34,7 @@ yum install nginx
 http://10.0.0.1:8080/test/test.txt，nginx会去掉匹配的“/proxy”。
 
  - 相对路径
-  ```
+  ```nginx
   location /proxy {
     proxy_pass http://192.168.137.181:8080;
   }
@@ -52,7 +52,7 @@ http://192.168.137.181:8080/proxy/test/test.txt， 此时nginx会把匹配的“
 
 ### 配置 ssl 证书
 
-```shell
+```nginx
    server {
       listen              443 ssl;
       server_name         bpm.jbhcorp.cn;
@@ -112,8 +112,7 @@ http {
     }
   }
 }
-
-
+```
 ## location
 
 ```nginx
@@ -130,3 +129,15 @@ server {
   }
 }
 ```
+### Q & A
+
+Q:  `nginx: [error] invalid PID number "" in "/run/nginx.pid"`
+
+A:
+```shell
+#  获取 nginx 进程号
+ps -aux | grep "nginx: master process"
+#  将进程号写入文件
+echo xxx > /run/nginx.pid
+```
+
