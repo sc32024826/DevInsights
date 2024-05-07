@@ -53,7 +53,8 @@ const slider = [
       { text: 'Docker', link: '/server/Docker' },
       { text: 'Python', link: '/server/Python' },
       { text: 'Nginx', link: '/server/Nginx' },
-      { text: '宝塔面板', link: '/server/Baota' }
+      { text: '宝塔面板', link: '/server/Baota' },
+      { text: 'PM2', link: '/Pm2' }
     ]
   },
   {

@@ -86,3 +86,7 @@ server {
     }
  })
  ```
+
+ ## `npx nuxi@latest module add tresjs`
+
+ 添加模块

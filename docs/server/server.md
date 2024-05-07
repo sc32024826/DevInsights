@@ -55,3 +55,13 @@ application/javascript  js;
 application/javascript  js mjs;
 
 ```
+
+## 服务器安装 nodejs
+
+```shell
+# 指定版本
+curl --silent --location https://rpm.nodesource.com/setup_18.x | bash
+
+yum install nodejs
+
+```
