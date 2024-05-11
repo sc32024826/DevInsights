@@ -29,6 +29,7 @@ const slider = [
         ]
       },
       { text: 'Tailwindcss', link: '/Tailwindcss' },
+      { text: 'Tresjs', link: '/Tresjs' },
     ]
   },
   {
