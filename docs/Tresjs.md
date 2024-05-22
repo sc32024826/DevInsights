@@ -27,4 +27,4 @@ const { scene } = await useGLTF(path)
 <TresGridHelper />
 ```
 
-![TresGridHelper](GridHelper.png)
+![TresGridHelper](/1.png)
