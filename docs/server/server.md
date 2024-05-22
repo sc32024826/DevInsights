@@ -27,7 +27,7 @@ ssh ali
 ```
 
 
-## 阿里服务器 80端口被阿里云盾 占用 解决办法
+## 阿里服务器 80端口被`阿里云盾` 占用 解决办法
 
 ```shell
 # 查看80端口的占用情况
@@ -64,4 +64,10 @@ curl --silent --location https://rpm.nodesource.com/setup_18.x | bash
 
 yum install nodejs
 
+```
+
+## 查看端口占用情况
+
+```shell
+lsof -i :3000
 ```

@@ -124,3 +124,10 @@ pnpm setup
 `-I`: 忽略模式，指定要忽略的文件或目录。
 
 `-X`: 排除模式，指定要排除的文件或目录。
+
+`-z`: --compress：压缩传输数据。
+
+```shell
+# 表示同步当前目录下的.output/ 文件夹 到 sc服务器上的 指定目录下
+rsync -avz --delete .output/ sc:/usr/share/nginx/modules/nuxt/
+```
