@@ -65,9 +65,49 @@ curl --silent --location https://rpm.nodesource.com/setup_18.x | bash
 yum install nodejs
 
 ```
+## centos 版本问题可能导致 无法安装  报错如下
+
+```shell
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.20)(64bit)
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libc.so.6(GLIBC_2.28)(64bit)
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.21)(64bit)
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(CXXABI_1.3.9)(64bit)
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libm.so.6(GLIBC_2.27)(64bit)
+Error: Package: 2:nodejs-18.20.3-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: glibc >= 2.28
+           Installed: glibc-2.17-326.el7_9.x86_64 (installed)
+               glibc = 2.17-326.el7_9
+           Available: glibc-2.17-317.el7.i686 (base)
+               glibc = 2.17-317.el7
+           Available: glibc-2.17-322.el7_9.i686 (updates)
+               glibc = 2.17-322.el7_9
+           Available: glibc-2.17-323.el7_9.i686 (updates)
+               glibc = 2.17-323.el7_9
+           Available: glibc-2.17-324.el7_9.i686 (updates)
+               glibc = 2.17-324.el7_9
+           Available: glibc-2.17-325.el7_9.i686 (updates)
+               glibc = 2.17-325.el7_9
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+```
+    问题原因: 从nodejs v18开始, 不再支持centos7 和其他一些Linux发行版, 因为glibc版本不兼容
+
+    解决办法: 升级centos 版本
+
 
 ## 查看端口占用情况
 
 ```shell
 lsof -i :3000
+```
+
+## 查看服务器系统os版本
+
+```shell
+cat /etc/centos-release
 ```

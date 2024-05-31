@@ -39,3 +39,15 @@ npx prisma migrate dev --name [commit]
 # or
 prisma migrate dev --name [commit]
 ```
+
+## 不同架构会遇到的问题
+
+ 当我在`macos` 上 进行 `prisma generate`, `db pull` 等操作之后 直接发布到`linux`服务器会报错,  需要
+
+ ```prisma
+ generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+ ```
+ 增加 支持平台才可以
