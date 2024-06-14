@@ -20,14 +20,9 @@ const slider = [
       { text: '单元测试', link: '/jest' },
       { text: 'webGL', link: '/webGL' },
       { text: 'Electron', link: '/Electron' },
-      {
-        text: 'npm 依赖',
-        items: [
-          { text: 'husky', link: '/npm-packages/husky' },
-          { text: 'commitlint', link: '/npm-packages/commitlint' },
-          { text: 'standard-version', link: '/npm-packages/standard-version' }
-        ]
-      },
+      { text: 'husky', link: '/npm-packages/husky' },
+      { text: 'commitlint', link: '/npm-packages/commitlint' },
+      { text: 'standard-version', link: '/npm-packages/standard-version' },
       { text: 'Tailwindcss', link: '/Tailwindcss' },
       { text: 'Tresjs', link: '/Tresjs' },
     ]

@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-    name: Vitepress
+    name: Dev-insights
     actions:
     - theme: brand
       text: 浏览
