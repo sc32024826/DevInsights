@@ -28,12 +28,12 @@ npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
 在`uniapp`中 `vue2`版本 `is`必须传递`string`类型, 否则云打包无法正常渲染
 
 
-#### 通过该请求可以查询`appstore`当前最新的版本信息
+## 通过该请求可以查询`appstore`当前最新的版本信息
 用于匹配ios端 是否需要跳转应用市场升级
 `https://itunes.apple.com/cn/lookup?id=`
 
 
-### 如果使用uniapp的canvas 滑动过快会造成笔画不连贯
+## 如果使用uniapp的canvas 滑动过快会造成笔画不连贯
 
 ```vue
 <template>

@@ -1,4 +1,4 @@
-# startship 美化命令行工具
+# starship 美化命令行工具
 
 安装
 
@@ -8,7 +8,7 @@ curl -sS https://starship.rs/install.sh | sh
 
 配置
 
-```zsh
+```shell
 # ~/.zshrc
 eval "$(starship init zsh)"
 ```
