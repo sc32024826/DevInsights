@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.294102a3.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"server/Koa2.md"}'),r={name:"server/Koa2.md"};function o(s,c,n,p,_,d){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};

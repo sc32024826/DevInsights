@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,d as l}from"./app.294102a3.js";const F=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"shell/MacOS/Homebrew.md"}'),p={name:"shell/MacOS/Homebrew.md"},e=l("",7),o=[e];function c(t,r,i,y,D,C){return n(),a("div",null,o)}const u=s(p,[["render",c]]);export{F as __pageData,u as default};

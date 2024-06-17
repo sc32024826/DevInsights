@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,d as e}from"./app.294102a3.js";const y=JSON.parse('{"title":"\u6B63\u5219","description":"","frontmatter":{},"headers":[],"relativePath":"regexDemo.md"}'),p={name:"regexDemo.md"},l=e("",3),o=[l];function t(c,r,i,D,d,C){return a(),n("div",null,o)}const A=s(p,[["render",t]]);export{y as __pageData,A as default};
