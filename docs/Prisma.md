@@ -5,15 +5,18 @@
 
 ## 连接多个数据库
 
-1. 在 `prisma` 目录下新建一个`schema.prisma` 文件
+1. 在 `prisma` 目录下新建一个 `schema`目录, 然后根据需要的数据库配置多个`schema`文件
 
 2. 在`schema.prisma` 文件中 注意添加 `output`
+
+需要注意把生成目录 放在node_modules下, 否则会因为生成的文件是cjs格式导致报错
+
 ```prisma
 
 generator client {
     provider      = "prisma-client-js"
     binaryTargets = ["native"]
-    output = "./generated/client1"
+    output = "../../node_modules/@prisma-db1/client"
 }
 
 datasource db {
@@ -32,8 +35,8 @@ bunx prisma generate --schema ./prisma/schema.prisma
 4. 导出多个库
 
 ``` ts
-import { PrismaClient as PrismaClient1 } from '~/prisma/generated/client1'
-import { PrismaClient as PrismaClient2 } from '~/prisma/generated/client2'
+import { PrismaClient as PrismaClient1 } from '@prisma-db1/client1'
+import { PrismaClient as PrismaClient2 } from '@prisma-db2/client2'
 
 const client1 = new PrismaClient1()
 const client2 = new PrismaClient2()
