@@ -29,7 +29,7 @@ if (other.length > 0) {
 
 ## 遇到的问题
 
-Q: 当我在某个脚本中使用
+Q: 1. 当我在某个脚本中使用
 
 ```js
 import { useAppStore } from "@/store";
@@ -49,3 +49,7 @@ A: 检查 `tsconfig.json` 文件中 `paths` 配置项是否正确配置
   }
 }
 ```
+
+Q: 2. `Avoid app logic that relies on enumerating keys on a component instance.`
+
+A: 在使用`form`的时候, 不要`ref`和`model` 绑定相同的变量名
