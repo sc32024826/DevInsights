@@ -51,8 +51,8 @@ const slider = [
       { text: 'Nginx', link: '/server/Nginx' },
       { text: '宝塔面板', link: '/server/Baota' },
       { text: 'PM2', link: '/Pm2' },
-      { text: 'Prisma', link: '/Prisma' }
-
+      { text: 'Prisma', link: '/Prisma' },
+      { text: 'Nestjs', link: '/Nestjs' }
     ]
   },
   {
