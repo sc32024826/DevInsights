@@ -56,3 +56,17 @@ export class UserController {
 ```
 
 也可以单独给 某个方式添加 `@Version('2')` 指定版本
+
+## nestjs 打包时不会将依赖一起打到输出中
+
+因此正确的做法是使用ci/cd 或者 docker等形式部署
+
+也可以配置 `webpack.config` 中的 `externals` 选项 可以打包 依赖
+
+```js
+...
+module.exports = {
+  ...
+  externals: {}
+}
+```

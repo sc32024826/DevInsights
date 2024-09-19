@@ -51,6 +51,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm ls-remote
 # 如果只有 iojs 说明镜像源有问题  2024年03月12日  原因是不支持https 改为http 即可
 
+<h3 style="color:#FF9900">2024-9-19 http 也不可用  更改为 `https://npmmirror.com/mirrors/node/`</h3>
+
 ```
 
 ## 常用命令
