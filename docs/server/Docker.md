@@ -56,15 +56,19 @@ docker pull gitlab/gitlab-ce
 
 ## 解决服务器无法拉取镜像的问题
 
-1. 本地制作镜像  保存为压缩包
+- 压缩包直传
 
-   ```bash
-   docker save -o gitlab-ce.tar gitlab/gitlab-ce
+   1. 本地制作镜像  保存为压缩包
+
+      ```bash
+      docker save -o gitlab-ce.tar gitlab/gitlab-ce
+      ```
+   2. 上传到服务器
+
+   3. 服务器docker 加载 镜像
+
+      ```bash
+      docker load < gitlab-ce.tar
    ```
-2 . 上传到服务器
 
-3. 服务器docker 加载 镜像
-
-   ```bash
-   docker load < gitlab-ce.tar
-   ```
+- 可以使用阿里云容器镜像服务

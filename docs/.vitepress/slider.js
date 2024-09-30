@@ -52,7 +52,9 @@ const slider = [
       { text: '宝塔面板', link: '/server/Baota' },
       { text: 'PM2', link: '/Pm2' },
       { text: 'Prisma', link: '/Prisma' },
-      { text: 'Nestjs', link: '/Nestjs' }
+      { text: 'Nestjs', link: '/Nestjs' },
+      { text: 'k8s', link: '/K8s' }
+
     ]
   },
   {

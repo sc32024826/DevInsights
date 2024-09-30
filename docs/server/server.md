@@ -111,3 +111,12 @@ lsof -i :3000
 ```shell
 cat /etc/centos-release
 ```
+
+
+## 修改hostname 即 控制台 显示名称, [root@k8s-master01 ~]#
+
+```shell
+hostnamectl set-hostname k8s-master01
+
+hostnamectl 可以查看当前的hostname等信息
+```
