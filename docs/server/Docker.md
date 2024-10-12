@@ -46,6 +46,10 @@ curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script
 # 安装
 yum  -y  install  gitlab-ce
 
+# 添加tag  构建镜像之后  需要添加tag 才能push 到远程仓库
+docker tag A:v1 B:v2
+
+
 ```
 
 ```bash
@@ -53,6 +57,7 @@ yum  -y  install  gitlab-ce
 docker pull gitlab/gitlab-ce
 
 ```
+
 
 ## 解决服务器无法拉取镜像的问题
 
@@ -72,3 +77,14 @@ docker pull gitlab/gitlab-ce
    ```
 
 - 可以使用阿里云容器镜像服务
+
+
+## Macos 镜像构建说明
+
+在macos上使用`docker build ...` 构建镜像的时候 会默认构建适合于macos 即 arm64 的镜像  无法直接部署在linux上
+
+因此 需要使用到  `buildx` 来构建 多平台的镜像
+
+```shell
+docker buildx build --platform linux/amd64 --push --tag nest-microservice .
+```

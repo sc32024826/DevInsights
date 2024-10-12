@@ -120,3 +120,12 @@ hostnamectl set-hostname k8s-master01
 
 hostnamectl 可以查看当前的hostname等信息
 ```
+
+
+## 动态查看日志文件的命令
+
+`tail -f`
+
+```shell
+tail -f /var/log/access.log
+```
