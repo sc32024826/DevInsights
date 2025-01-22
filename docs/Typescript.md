@@ -110,3 +110,10 @@ Partial<obj>
 ```
 
 ## 9. `infer` ts 中的类型推断
+
+
+## 初始化 tsconfig文件 并生成中文注释
+
+```bash
+npx tsc --init --locale zh-CN
+```

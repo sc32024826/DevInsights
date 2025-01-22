@@ -53,3 +53,17 @@ A: 检查 `tsconfig.json` 文件中 `paths` 配置项是否正确配置
 Q: 2. `Avoid app logic that relies on enumerating keys on a component instance.`
 
 A: 在使用`form`的时候, 不要`ref`和`model` 绑定相同的变量名
+
+
+## 当项目中 通过 '@/xxx' 引入文件, 但是无法通过 command + 左键 跳转时
+
+需要在 `jsconfig/tsconfig` 中添加配置
+```json
+    "compilerOptions": {
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    }
+```
