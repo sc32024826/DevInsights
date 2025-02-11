@@ -67,3 +67,11 @@ A: 在使用`form`的时候, 不要`ref`和`model` 绑定相同的变量名
         }
     }
 ```
+
+Q3: `tsconfig.json` 报错 xxx 会 覆盖
+
+```json
+    "compilerOptions": {
+        "outDir": "dist"
+    }
+```

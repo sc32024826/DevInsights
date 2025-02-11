@@ -88,3 +88,10 @@ docker pull gitlab/gitlab-ce
 ```shell
 docker buildx build --platform linux/amd64 --push --tag nest-microservice .
 ```
+
+
+
+```shell
+# 实际操作中发现 --name 放在后边会导致 命名失败  -d 放在 -e 前边 会导致 -e 失效  不知为什么
+docker run --name postgresSQL -p 5432:5432 -e POSTGRES_PASSWORD=142857 -d postgres
+```
