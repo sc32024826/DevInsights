@@ -2,7 +2,7 @@
 
 ## 修改maven 镜像源
 
-在 ~/.m2/settings.xml 添加 <mirror>
+在 ~/.m2/settings.xml 添加 `mirror`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
