@@ -117,3 +117,7 @@ Partial<obj>
 ```bash
 npx tsc --init --locale zh-CN
 ```
+
+## 10 无法写入文件 xxx 因为它会覆盖输入文件
+
+遇到类似的报错时 需要在`tsconfig.json` 中配置 `outDir`来指定输出目录
